@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi calculadora</title>
 </head>
 <body>
+    <link rel="stylesheet" href="style.css">
     <form id="form">  
-        <label for="n1">Ingrese un numero:</label>  
+        <div class="flex-conta8iner"><label for="n1">Ingrese un numero:</label></div>
         <input type="number" id="n1"name="n1"required>
         <br>
-        <label for="n2">Ingrese un numero 2:</label>  
+       <div class="flex-conta8iner"> <label for="n2">Ingrese un numero 2:</label></div> 
         <input type="number" id="n2"name="n2"required>
         <br>
-        <button type="button" onclick="calcular('sumar')">sumar</button>
+     <button type="button" onclick="calcular('sumar')">sumar</button>
         <button type="button" onclick="calcular('resta')">resta</button>
         <button type="button" onclick="calcular('multiplicacion')">multiplicacion </button>
         <button type="button" onclick="calcular('division')">division</button>
@@ -22,7 +23,8 @@
         <input type="text" id="resultado" readonly>
     </form>
     <script src="calcular.js"></script>
-    <css src="style.css"></css>
 </body>
 
 </html>
+
+  
